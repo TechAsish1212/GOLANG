@@ -1,0 +1,36 @@
+package main
+
+import "fmt"
+
+func chnageNumber(num int) { // In this function, we are passing the value of `num` as an argument. Since Go uses pass-by-value, the `num` variable inside the `chnageNumber` function is a copy of the original `num` variable in the `main` function. Therefore, any changes made to `num` inside `chnageNumber` will not affect the original `num` variable in `main`. When we assign a new value to `num` inside `chnageNumber`, it only changes the local copy of `num`, and the original `num` in `main` remains unchanged.
+	num = 5;
+
+	fmt.Println("In changeNumber",num);
+
+
+}
+
+// pass by reference using pointers
+func swap(num1 *int, num2 *int) { // In this function, we are passing a pointer to an integer (`*int`). This means that instead of passing the value of `num`, we are passing the memory address of `num`. Inside the function, we can dereference the pointer to access and modify the original variable. When we assign a new value to `*num`, it changes the value at the memory address that `num` points to, which is the original variable in `main`. Therefore, when we call `changeNumberByPointer(&num)`, we pass the address of `num`, and any changes made to `*num` inside the function will affect the original `num` variable in `main`.
+	*num1 = 5;
+	*num2 = 10;
+
+	fmt.Println("In swap",*num1, *num2);
+
+}
+
+func main() {
+	// Pointers---->A pointer is a variable that holds the memory address of another variable. In Go, you can use pointers to directly manipulate the value stored at a specific memory location. This allows for more efficient memory usage and can be useful for passing large data structures to functions without copying them.
+
+
+	num :=10;
+	fmt.Println("Before changeNumber",num);
+	chnageNumber(num);
+	fmt.Println("After changeNumber",num);
+
+	num1 := 10;
+	num2 := 20;
+	fmt.Println("Before swap",num1, num2);
+	swap(&num1, &num2);
+	fmt.Println("After swap",num1, num2);
+}
