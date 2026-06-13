@@ -1,0 +1,1 @@
+// Closures---->A closure is a function that captures and retains access to variables from its surrounding scope, even after that scope has finished executing. In Go, closures are created when you define a function inside another function and the inner function references variables from the outer function.
