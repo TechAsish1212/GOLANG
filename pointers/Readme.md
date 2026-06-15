@@ -1,0 +1,1 @@
+	// Pointers---->A pointer is a variable that holds the memory address of another variable. In Go, you can use pointers to directly manipulate the value stored at a specific memory location. This allows for more efficient memory usage and can be useful for passing large data structures to functions without copying them.
