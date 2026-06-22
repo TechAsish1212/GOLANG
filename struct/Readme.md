@@ -1,0 +1,1 @@
+	// Structs---->A struct (short for "structure") is a composite data type in Go that groups together zero or more fields with varying data types. It allows you to create complex data structures that can represent real-world entities or concepts. Structs are defined using the `type` keyword, and you can create instances of a struct to store and manipulate data.
