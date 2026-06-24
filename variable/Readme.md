@@ -1,0 +1,1 @@
+int is the default type for whole numbers . otherwise(if we use int32 or int64) it will be treated as int and it will be converted to int32 or int64 based on the platform we are running the code on.
