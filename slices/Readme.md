@@ -1,1 +1,5 @@
  slice --> In Go, a slice is a flexible, dynamically-sized view into an underlying array. Slices are one of the most commonly used data structures in Go. They provide a more powerful and convenient way to work with sequences of data compared to arrays. A slice is defined by three components: a pointer to the underlying array, the length of the slice, and its capacity.
+
+var nums []int // declaring a slice of integers
+fmt.Println("Slice:", nums)
+fmt.Println(nums==nil)
