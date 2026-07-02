@@ -1,1 +1,4 @@
 	// Pointers---->A pointer is a variable that holds the memory address of another variable. In Go, you can use pointers to directly manipulate the value stored at a specific memory location. This allows for more efficient memory usage and can be useful for passing large data structures to functions without copying them.
+
+	func chnageNumber(num int)  --> In this function, we are passing the value of `num` as an argument. Since Go uses pass-by-value, the `num` variable inside the `chnageNumber` function is a copy of the original `num` variable in the `main` function. Therefore, any changes made to `num` inside `chnageNumber` will not affect the original `num` variable in `main`. When we assign a new value to `num` inside `chnageNumber`, it only changes the local copy of `num`, and the original `num` in `main` remains unchanged.
+	num = 5;
