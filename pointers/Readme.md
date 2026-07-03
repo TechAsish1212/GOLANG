@@ -2,3 +2,7 @@
 
 	func chnageNumber(num int)  --> In this function, we are passing the value of `num` as an argument. Since Go uses pass-by-value, the `num` variable inside the `chnageNumber` function is a copy of the original `num` variable in the `main` function. Therefore, any changes made to `num` inside `chnageNumber` will not affect the original `num` variable in `main`. When we assign a new value to `num` inside `chnageNumber`, it only changes the local copy of `num`, and the original `num` in `main` remains unchanged.
 	num = 5;
+
+
+<!-- pass by reference using pointers -->
+func swap(num1 *int, num2 *int) In this function, we are passing a pointer to an integer (`*int`). This means that instead of passing the value of `num`, we are passing the memory address of `num`. Inside the function, we can dereference the pointer to access and modify the original variable. When we assign a new value to `*num`, it changes the value at the memory address that `num` points to, which is the original variable in `main`. Therefore, when we call `changeNumberByPointer(&num)`, we pass the address of `num`, and any changes made to `*num` inside the function will affect the original `num` variable in `main`.
