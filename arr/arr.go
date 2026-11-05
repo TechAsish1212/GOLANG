@@ -4,9 +4,9 @@ import "fmt"
 
 func main() {
 	// array declaration 
-	// var nums [5]int;
-	// nums[0] = 10;
-	// fmt.Println("Arrays",nums[0]);
+	var nums [5]int;
+	nums[0] = 10;
+	fmt.Println("Arrays",nums[0]);
 	// fmt.Println("Total size of array: ",len(nums));   // length of array
 
 	// var num int;
@@ -26,8 +26,8 @@ func main() {
 	// }
 
 	// array initialization
-	nums := [5]int{1, 2, 3, 4, 5}
-	fmt.Println("Initialized array:", nums)
+	// nums := [5]int{1, 2, 3, 4, 5}
+	// fmt.Println("Initialized array:", nums)
 	
 	// 2d array
 	// var matrix [3][3]int
